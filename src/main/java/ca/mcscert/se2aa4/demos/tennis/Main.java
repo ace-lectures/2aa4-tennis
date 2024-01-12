@@ -6,13 +6,18 @@ import org.apache.commons.cli.DefaultParser;
 import org.apache.commons.cli.Options;
 import org.apache.commons.cli.ParseException;
 
+import java.util.logging.Logger;
+import org.apache.logging.log4j.LogManager;
+//import org.apache.logging.log4j.;
+
 public class Main {
 
     public static int PLAYER1_STRENGTH;
     public static int PLAYER2_STRENGTH;
-
+    Logger logger = new LogManager(main.class.getName());
     public static void main(String[] args) {
-        System.out.println("** Starting Tennis Counter Assistant");
+
+        Logger.info("** Starting Tennis Counter Assistant");
         System.out.println("**** Reading Command-Line Arguments");
         Options options = new Options();
         options.addOption("p1", true, "Strength of Player 1 in [0,100]");
