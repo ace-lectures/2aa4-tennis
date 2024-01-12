@@ -29,6 +29,7 @@ public class Main {
         } catch (ParseException pe) {
             System.err.println("An error has occurred");
         }
+
         logger.info("**** Starting game");
         logger.debug("** TODO...");
         logger.info("** Closing Tennis Counter Assistant");
