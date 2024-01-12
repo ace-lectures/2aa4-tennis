@@ -14,7 +14,7 @@ public class Main {
 
     public static int PLAYER1_STRENGTH;
     public static int PLAYER2_STRENGTH;
-    Logger logger = new LogManager(main.class.getName());
+    Logger logger = new LogManager(Work.class.getName());
     public static void main(String[] args) {
 
         Logger.info("** Starting Tennis Counter Assistant");
