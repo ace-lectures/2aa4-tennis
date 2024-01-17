@@ -42,6 +42,9 @@ public class Main {
         try {
             Configuration config = configure(args);
             System.out.println(config);
+            Match theMatch = new Match(config.p1Strength(), config.p2Strength());
+            String winner = theMatch.play();
+            System.out.println("==>> Winner: " + winner);
 
         } catch (ParseException e) {
             // TODO Auto-generated catch block
